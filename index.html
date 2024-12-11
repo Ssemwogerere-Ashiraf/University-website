@@ -10,27 +10,7 @@
 </head>
 
 <body>
-     <div id="date-time"></div>
-
-    <script>
-      function updateDateTime() {
-        const now = new Date();
-        const options = {
-          weekday: 'long',
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-        };
-        const formattedDateTime = now.toLocaleDateString('en-US', options);
-        document.getElementById('date-time').textContent = formattedDateTime;
-      }
-  
-      setInterval(updateDateTime, 1000); // Update every second
-      updateDateTime(); // Initial call to display immediately
-    </script>
+    
     <!-- Header Section -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -58,6 +38,27 @@
             </div>
         </nav>
     </header>
+     <div id="date-time"></div>
+
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const options = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+        };
+        const formattedDateTime = now.toLocaleDateString('en-US', options);
+        document.getElementById('date-time').textContent = formattedDateTime;
+      }
+  
+      setInterval(updateDateTime, 1000); // Update every second
+      updateDateTime(); // Initial call to display immediately
+    </script>
 
 
     <!-- Main Content Section -->
