@@ -59,3 +59,9 @@
     text-align: center;
     font-weight: bolder;
    }
+#date-time {
+    font-size: 24px;
+    font-weight:normal;
+    color: purple;
+    background-color: rgba(96, 165, 189, 0.5);
+}
