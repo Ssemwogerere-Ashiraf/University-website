@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makerere University</title>
+    <!-- Bootstrap 4.3 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="header">
+                    <img src="makerere.jpg" alt="Makerere University Logo" width="70" height="70">
+                   MAKERERE UNIVERSITY
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Content Section -->
+    <main class="container my-4">
+        <div class="row">
+            <!-- Welcome Message -->
+            <div class="col-md-6">
+                <div class="jumbotron" style="color: #004080;">
+                    <h1 style="text-align: center;">Welcome to Makerere University</h1>
+                       <br> <p class="card"><img class="home" src="mak.uni.png" alt="Aerial view of the University." height="270" width="280"></p>
+              
+                    <p>Makerere University, one of Africa's leading academic institutions, is committed to advancing research, innovation, and academic excellence. Join us in shaping the future!</p>
+               <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #3f8; text-align: center;">MISSION</h2>
+               <p style="color: blueviolet;">Providing transformative and innovative teaching, learning, research and services responsive to dynamic national and global needs.</p>
+                </div>
+            </div>
+
+          
+            <!-- Courses -->
+            <div class="col-md-6" id="courses">
+                <h1 class="text-center mb-4">OFFERED COURSES</h1>
+                <div class="card course-card">
+                    <div class="card-body">
+                        <h1 class="card-title">Bachelor of Science in Computer Science</h1>
+                          <br> <p class="card"> <img class="home" src="computer science.png" alt="computer science" height="270" width="280"></p>
+                        <p class="card-text">Explore programming, algorithms, and data science to excel in the tech world.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card course-card">
+                    <div class="card-body">
+                        <h1 class="card-title">Bachelor of Business Administration</h1>
+                         <br>  <p class="card"> <img class="home" src="BAM.png" alt="Business Administration" height="270" width="280"></p>
+                            <p class="card-text">Master the art of management, marketing, and financial analysis.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card course-card">
+                    <div class="card-body">
+                        <h1 class="card-title" s>Bachelor of Environmental Science</h1>
+                         <p class="card"> <img class="home" src="ES.png" alt="Environmental science" height="270" width="280"></p>
+                        <p class="card-text">Understand environmental issues and develop sustainable solutions.</p>
+                         <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<div class="container" id="flex">
+    <button type="button" onclick="myFunction()">View Other Courses</button>
+   
+    <script>
+        function myFunction() {
+            document.getElementById("flex").innerHTML = "Agriculture,<br> Journalism,<br> Mass Communication etc."
+        }
+    </script>
+</div>
+
+<div class="container" >
+    <p id="demo"> Piece of advice!!</p>
+    <button type="button" onmouseover="myFunction()">Advice</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "We urge you to join our University so that you fulfill your prospects, enrich your targets as well as aspirations in academia!! <br> Follow us on all media platforms or contact us on the provided contacts and website.<br> We wish you a Merry Christmas and a Happy new Year!! <br> May God Bless You!!";
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "green";
+        }
+    </script>
+</div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mb-5">
+        <h2 class="text-center mb-4">&phone; Contact Us &phone;</h2>
+        <p class="text-center">For inquiries, feel free to reach out to us:</p>
+        <p class="text-center">Visit our website: <a href="https://www.mak.ac.ug" target="_blank">www.mak.ac.ug</a></p>
+       <p class="text-center"><strong>Address:</strong> Makerere Hill Rd, P.O Box 7062, Kampala, Uganda</p>
+        <p class="text-center"><strong>Tel:</strong>+256-414-542803</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p class="text-center"><strong>Email:</strong> <a href="mailto:info@mak.ac.ug">info@mak.ac.ug</a></p>
+       
+        <p>&copy; 2024 Makerere University. All rights reserved.</p>
+        </footer>
+
+    <!-- Bootstrap 4.3 JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
